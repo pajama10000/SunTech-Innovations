@@ -1,57 +1,129 @@
-/* General styles */
-* {
-  box-sizing: border-box;
+/* Typography */
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  color: #444;
 }
 
-body {
-  font-family: Arial, sans-serif;
+h1, h2, h3 {
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* Colors */
+:root {
+  --primary-color: #2e7d32; /* green color */
+  --secondary-color: #ffffff; /* white color */
+  --text-color: #444; /* dark gray color */
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 20px 40px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 
-/* Header styles */
-header {
-  background-color: #333;
-  padding: 20px;
-  text-align: center;
-  color: white;
+nav ul li {
+  margin-right: 20px;
 }
 
-/* Navigation styles */
-nav {
-  display: flex;
-  justify-content: space-around;
-  background-color: #333;
-  padding: 10px 0;
+nav ul li:last-child {
+  margin-right: 0;
 }
 
-nav a {
-  color: white;
+nav ul li a {
+  color: var(--secondary-color);
   text-decoration: none;
-  padding: 8px 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
 }
 
-nav a:hover {
-  background-color: #555;
-  border-radius: 4px;
+nav ul li a:hover {
+  text-decoration: underline;
 }
 
-/* Main content styles */
+.logo img {
+  max-width: 100%;
+}
+
+/* Main */
 main {
-  padding: 20px;
-}
-
-/* Footer styles */
-footer {
-  background-color: #333;
-  padding: 20px;
+  padding: 50px;
   text-align: center;
-  color: white;
 }
 
-/* Responsive styles */
-@media (max-width: 600px) {
-  nav {
-    flex-wrap: wrap;
-  }
+section {
+  margin-bottom: 100px;
+}
+
+button {
+  background-color: var(--secondary-color);
+  border: none;
+  color: var(--primary-color);
+  padding: 16px 32px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #fff;
+  color: var(--primary-color);
+}
+
+/* Footer */
+footer {
+  background-color: #444;
+  color: var(--secondary-color);
+  padding: 40px;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+footer a {
+  color: var(--secondary-color);
+  text-decoration: underline;
+  transition: all 0.2s ease-in-out;
+}
+
+footer a:hover {
+  color: #fff;
+  text-decoration: none;
 }
