@@ -1,129 +1,40 @@
-/* Typography */
-body {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+* {
   margin: 0;
   padding: 0;
-  color: #444;
+  box-sizing: border-box;
 }
 
-h1, h2, h3 {
-  font-weight: bold;
-  margin-top: 0;
-  margin-bottom: 20px;
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #a5d6a7;
+  padding: 20px 0;
+  text-align: center;
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
 }
 
-h2 {
-  font-size: 36px;
-}
-
-h3 {
-  font-size: 24px;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
-/* Colors */
-:root {
-  --primary-color: #2e7d32; /* green color */
-  --secondary-color: #ffffff; /* white color */
-  --text-color: #444; /* dark gray color */
-}
-
-/* Header */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--primary-color);
-  padding: 20px 40px;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  margin-right: 20px;
-}
-
-nav ul li:last-child {
-  margin-right: 0;
-}
-
-nav ul li a {
-  color: var(--secondary-color);
-  text-decoration: none;
-  font-weight: bold;
-  text-transform: uppercase;
-  transition: all 0.2s ease-in-out;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
-}
-
-.logo img {
-  max-width: 100%;
-}
-
-/* Main */
 main {
-  padding: 50px;
-  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
 }
 
 section {
-  margin-bottom: 100px;
+  margin-bottom: 40px;
 }
 
-button {
-  background-color: var(--secondary-color);
-  border: none;
-  color: var(--primary-color);
-  padding: 16px 32px;
-  font-size: 18px;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
-button:hover {
-  background-color: #fff;
-  color: var(--primary-color);
-}
-
-/* Footer */
-footer {
-  background-color: #444;
-  color: var(--secondary-color);
-  padding: 40px;
-  text-align: center;
-}
-
-footer p {
-  margin-bottom: 0;
-}
-
-footer a {
-  color: var(--secondary-color);
-  text-decoration: underline;
-  transition: all 0.2s ease-in-out;
-}
-
-footer a:hover {
-  color: #fff;
-  text-decoration: none;
-}
